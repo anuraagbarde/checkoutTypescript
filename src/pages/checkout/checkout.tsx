@@ -3,26 +3,9 @@ import * as React from "react";
 import { useState, useEffect } from "react";
 import ItemList from "./itemList";
 import Total from "./total";
+import { billInfo, idVsPriceInfo } from "./checkout.d";
 
-export interface CheckoutProps {}
-
-type priceInfo = {
-  price: number,
-  quantity: number,
-  discountPercent: number,
-  typeDiscountPercent: number,
-};
-
-export interface idVsPriceInfo {
-  [id: number]: priceInfo;
-}
-
-export interface billInfo {
-  totalItems: number;
-  totalBill: number;
-  discountAmount: number;
-  typeDiscountAmount: number;
-}
+interface CheckoutProps {}
 
 const Checkout: React.FC<CheckoutProps> = () => {
   // prettier-ignore

@@ -2,7 +2,7 @@ import { Row, Col, Card } from "reactstrap";
 import * as React from "react";
 import { checkoutData } from "../../services/checkoutServices";
 import { X, Plus, Minus } from "react-feather";
-import { idVsPriceInfo } from "./checkout";
+import { idVsPriceInfo } from "./checkout.d";
 
 type idVsPriceInfoState = {
   idVsPriceInfo: idVsPriceInfo,
@@ -84,8 +84,8 @@ const ItemRow: React.FC<ItemRowProps> = ({
             </Row>
           </Card>
         </Col>
-        <Col className="col-4">
-          <Row>
+        <Col align="center" className="col-4">
+          <Row className="justify-content-center">
             <Plus
               className="mt-2"
               onClick={() => {
