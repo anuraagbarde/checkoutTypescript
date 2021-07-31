@@ -4,10 +4,10 @@ import { getCheckoutData } from "../../services/checkoutServices";
 import { Spin } from "antd";
 import { checkoutData } from "../../services/checkoutServices";
 import ItemRow from "./itemRow";
-import { idVsPriceInfo } from "./checkout";
+import { idVsPriceInfo } from "./checkout.d";
 
 
-export interface ItemListProps {
+interface ItemListProps {
     idVsPriceInfo: idVsPriceInfo;
     setIdVsPriceInfo: React.Dispatch<React.SetStateAction<idVsPriceInfo>>;
 }

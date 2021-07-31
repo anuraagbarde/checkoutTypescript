@@ -1,8 +1,8 @@
 import * as React from "react";
 import { Card, Col, Row } from "reactstrap";
-import { billInfo } from "./checkout";
+import { billInfo } from "./checkout.d";
 
-export interface TotalProps {
+interface TotalProps {
   billInfo: billInfo;
 }
 
